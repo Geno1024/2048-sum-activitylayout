@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://cyberzhg.github.io/2048/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>2147483648</title>
+
+  <link href="./2147483648_files/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="http://cyberzhg.github.io/2048/favicon.ico">
+  <link rel="apple-touch-icon" href="http://cyberzhg.github.io/2048/meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2147483648</h1>
+      <div class="scores-container">
+        <div class="score-container" id="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+    <p class="game-intro" id="game-intro">Join the numbers and get to the <strong>2147483648 tile!</strong></p>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container" id="grid-container"><div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div></div><div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div></div><div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div></div><div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div></div><div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div></div><div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div></div><div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div></div><div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div></div></div>
+
+      <div class="tile-container" id="tile-container"><div class="tile tile-2 tile-position-6-6 tile-new"><div class="tile-inner">2</div></div><div class="tile tile-2 tile-position-8-3 tile-new"><div class="tile-inner">2</div></div></div>
+    </div>
+    <hr>
+    <p>
+      Time rush: <br>
+      <button name="automove" type="button" onclick="timeRush(60);">60s Time Rush</button>
+      <button name="automove" type="button" onclick="timeRush(300);">300s Time Rush</button>
+    </p>
+    <hr>
+    <p>
+      My Github: <a href="https://github.com/CyberZHG/">CyberZHG</a> <br>
+      Contributors: <a href="https://github.com/jiangtyd/">jiangtyd</a>|
+      <a href="https://github.com/allbinbin/">allbinbin</a>
+    </p>
+    <hr>
+    <p>
+      Auto move: <br>
+      <button name="automove" type="button" onclick="doMovementPattern(corner);">Corner</button>
+      <button name="automove" type="button" onclick="doMovementPattern(swing);">Swing</button>
+      <button name="automove" type="button" onclick="doMovementPattern(swirl);">Swirl</button>
+      <button name="automove" type="button" onclick="doMovementPattern(random);">Random</button>
+      <br>
+      <button type="button" onclick="stopMovement();">Stop</button>
+    </p>
+    <hr>
+    <p>
+      Special Mode: <br>
+      <button type="button" onclick="changeMode(&#39;normal&#39;);">Normal</button>
+      <button type="button" onclick="changeMode(&#39;alwaysTwo&#39;);">Always 2</button>
+      <button type="button" onclick="changeMode(&#39;fibonacci&#39;);">Fibonacci</button>
+      <button type="button" onclick="changeMode(&#39;threes&#39;);">Threes!</button>
+      <button type="button" onclick="changeMode(&#39;mergeAny&#39;);">Merge Any</button>
+      <button type="button" onclick="changeMode(&#39;powerTwo&#39;);">Power 2</button>
+      <button type="button" onclick="changeMode(&#39;tileZero&#39;);">Tile 0</button>
+      <button type="button" onclick="changeMode(&#39;tileNegative&#39;);">Negative</button>
+      <button type="button" onclick="changeMode(&#39;gravity&#39;);">Gravity</button>
+      <button type="button" onclick="window.location.href=&#39;auto_flappy.html&#39;;">Auto Flappy</button>
+    </p>
+    <hr>
+    <p>
+      Size: <br>
+      <button type="button" onclick="changeSize(1);">1×1</button>
+      <button type="button" onclick="changeSize(2);">2×2</button>
+      <button type="button" onclick="changeSize(3);">3×3</button>
+      <button type="button" onclick="changeSize(4);">4×4</button>
+      <button type="button" onclick="changeSize(5);">5×5</button>
+      <button type="button" onclick="changeSize(6);">6×6</button>
+      <button type="button" onclick="changeSize(7);">7×7</button>
+      <button type="button" onclick="changeSize(8);">8×8</button>
+    </p>
+    <hr>
+      Skin: <br>
+      <button type="button" onclick="window.location.href=&#39;skin_santi.html&#39;;">死神永生</button>
+      <button type="button" onclick="window.location.href=&#39;skin_shito.html&#39;;">使徒</button>
+      <button type="button" onclick="window.location.href=&#39;skin_bkb.html&#39;;">兵庫北</button>
+      <button type="button" onclick="window.location.href=&#39;skin_chemistry.html&#39;;">Chemistry</button>
+    <hr>
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    <strong class="important">Note:</strong> This site is <strong>NOT</strong> the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
+    </p>
+    <hr>
+    <p>
+    Created by <a href="http://gabrielecirulli.com/" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    </p>
+    <hr>
+  </div>
+  <script async="" src="./2147483648_files/analytics.js"></script><script src="./2147483648_files/animframe_polyfill.js"></script>
+  <script src="./2147483648_files/keyboard_input_manager.js"></script>
+  <script src="./2147483648_files/html_actuator.js"></script>
+  <script src="./2147483648_files/grid.js"></script>
+  <script src="./2147483648_files/tile.js"></script>
+  <script src="./2147483648_files/local_score_manager.js"></script>
+  <script src="./2147483648_files/game_manager.js"></script>
+  <script src="./2147483648_files/application.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-49094472-1', 'cyberzhg.github.io');
+    ga('send', 'pageview');
+  </script>
+
+
+</body></html>

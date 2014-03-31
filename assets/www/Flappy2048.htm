@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://hczhcz.github.io/Flappy-2048/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Flappy 2048</title>
+
+  <link href="./Flappy2048_files/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="http://hczhcz.github.io/Flappy-2048/favicon.ico">
+  <link rel="apple-touch-icon" href="http://hczhcz.github.io/Flappy-2048/meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">Flappy 2048</h1>
+      <div class="scores-container">
+        <div class="score-container">1<div class="score-addition">+1</div></div>
+        <div class="best-container">9</div>
+      </div>
+    </div>
+    <p class="game-intro">Jump through the tiles and get to <strong>2048!</strong></p>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="tile tile-block-a" style="top: 0px; left: -87.1484375px; "><div class="tile-inner"></div></div>
+        <div class="tile tile-block-b" style="top: 363.75px; left: -87.1484375px; "><div class="tile-inner"></div></div>
+        <div class="tile tile-block-c" style="top: 0px; left: 276.6015625px; "><div class="tile-inner"></div></div>
+        <div class="tile tile-block-d" style="top: 121.25px; left: 276.6015625px; "><div class="tile-inner"></div></div>
+        <div class="tile tile-bird tile-2" style="top: 456.5939341978353px; "><div class="tile-inner">0</div></div>
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Press <strong>any key</strong> to move the tile. When the tile go through a barrier, you get <strong>score!</strong>
+    </p>
+    <hr>
+    <p>
+    Created by <a href="http://github.com/hczhcz" target="_blank">hcz.</a> Based on <a href="http://gabrielecirulli.com/" target="_blank">2048 by Gabriele Cirulli</a> and <a href="http://en.wikipedia.org/wiki/Flappy_Bird" target="_blank">Flappy Bird by Dong Nguyen.</a>
+    </p>
+    <hr>
+    <p>More 2048 games:</p>
+    <p><a href="https://hczhcz.github.io/Racing-2048">Racing 2048</a>, <a href="https://hczhcz.github.io/2048">Upside down</a>, <a href="https://hczhcz.github.io/2048/2047">Role reversal</a>, <a href="https://hczhcz.github.io/2048/20ez">Easy ver</a>, <a href="https://hczhcz.github.io/2048/20mu">喵 ver</a>, <a href="https://hczhcz.github.io/my-2048">Customizable 2048</a></p>
+  </div>
+
+  <a href="https://github.com/hczhcz/Flappy-2048"><img style="position: absolute; top: 0; left: 0; border: 0;" src="./Flappy2048_files/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+
+  <script src="./Flappy2048_files/animframe_polyfill.js"></script>
+  <script src="./Flappy2048_files/keyboard_input_manager.js"></script>
+  <script src="./Flappy2048_files/html_actuator.js"></script>
+  <script src="./Flappy2048_files/grid.js"></script>
+  <script src="./Flappy2048_files/tile.js"></script>
+  <script src="./Flappy2048_files/local_score_manager.js"></script>
+  <script src="./Flappy2048_files/game_manager.js"></script>
+  <script src="./Flappy2048_files/application.js"></script>
+
+
+</body></html>
